@@ -1,0 +1,5 @@
+1. Lanzar env de Python:
+- source ../Cyber/bin/activate
+
+2. Lanzar el script de traducción:
+- python3 traduccion_EN_ES.py -i={archivo_a_traducir.md} -o={archivo_traducido.md}

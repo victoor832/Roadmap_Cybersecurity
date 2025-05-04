@@ -1,0 +1,328 @@
+/* src/pages/index.module.css */
+main section p {
+  color: #666666; /* Color ejemplo - cámbialo según tus preferencias */
+}
+
+/* .Btn {
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: .4s;
+  cursor: pointer;
+  position: relative;
+  background-color: rgb(31, 31, 31);
+  overflow: hidden;
+}
+
+.svgIcon {
+  transition-duration: .3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.text {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  width: 120px;
+  font-weight: 600;
+  opacity: 0;
+  transition-duration: .4s;
+}
+
+.Btn:hover {
+  width: 110px;
+  transition-duration: .4s;
+  border-radius: 30px;
+}
+
+.Btn:hover .text {
+  opacity: 1;
+  transition-duration: .4s;
+}
+
+.Btn:hover .svgIcon {
+  opacity: 0;
+  transition-duration: .3s;
+} */
+
+
+/* Para párrafos dentro de la sección hero */
+.heroBanner p {
+  color: #ffffff; /* Texto blanco para la sección hero */
+}
+
+/* Para párrafos dentro de las tarjetas de temas */
+.topicCard p {
+  color: #666666; /* Color gris medio para las descripciones en tarjetas */
+  
+}
+
+.topicCard h3 {
+  color: #1b4269;
+}
+
+/* Para párrafos en la sección de actualizaciones */
+.updateCard p {
+  color: #444444; /* Color personalizado para texto en actualizaciones */
+}
+
+.updateCard h3 {
+  color: black;
+  font-weight: bold;
+}
+
+/* Button styles */
+
+.buttonStyle {
+  border: 2px solid black;
+  transition: background-color 0.3s ease;
+}
+.buttonStyle:hover {
+  background-color: #e0e0e0; /* Gris claro, cambia si quieres */
+}
+
+/* General layout and responsive design */
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #051937, #004d7a);
+  color: white;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+/* Hero Section Styling */
+.heroContent {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.heroText {
+  flex: 1;
+  text-align: left;
+}
+
+.heroImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroImage img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* Stats Section Styling */
+.statsSection {
+  padding: 3rem 0;
+  background-color: #f7f7f7;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.statCard {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.statCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.statCard h3 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, #004d7a, #008793);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Topics Section Styling */
+.topicsSection {
+  padding: 4rem 0;
+}
+
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+}
+
+.topicsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.topicCard {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.topicCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.topicIcon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Updates Section Styling */
+.updatesSection {
+  padding: 4rem 0;
+  background-color: #f7f7f7;
+}
+
+.updatesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.updateCard {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.updateCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.updateMeta {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.updateDate {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.viewAllContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+/* Community Section Styling */
+.communitySection {
+  padding: 4rem 0;
+}
+
+.communityContent {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.communityText {
+  flex: 1;
+}
+
+.communityImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.communityImage img {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+}
+
+.communityButtons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 996px) {
+  .heroContent, .communityContent {
+    flex-direction: column;
+  }
+  
+  .heroText, .communityText {
+    text-align: center;
+  }
+  
+  .buttons, .communityButtons {
+    justify-content: center;
+  }
+  
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .topicsGrid, .updatesGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+}
