@@ -67,14 +67,14 @@ sidebar_label: Convertirse en SOC
   - Cifrado y descifrado de datos
   - Almacenamiento seguro de datos
   - Recuperación de datos
-- Segundo:** Destrucción de datos
+- **Segundo:**
   - Destrucción de datos
   - Leyes de privacidad de datos
   - Control de acceso de usuarios
 
 ## 7. Respuesta fundamental a incidentes
 
-- En primer lugar
+- **Primero:**
   - Detección de incidentes
   - Clasificación de incidentes
   - Estrategias de contención de incidentes
@@ -107,7 +107,7 @@ sidebar_label: Convertirse en SOC
 
 ## 10. Obtención de información sobre amenazas
 
-- En primer lugar
+- **Primero:**
   - Fundamentos de la inteligencia sobre amenazas
   - Marcos de inteligencia de amenazas
   - Ciberamenazas y sus fuentes
@@ -129,11 +129,11 @@ sidebar_label: Convertirse en SOC
 
 ## 12. Habilidades blandas para el analista SOC
 
-- Primero
+- **Primero:**
   - Habilidades de comunicación efectiva
   - Gestión del Tiempo
   - Pensamiento Crítico
-- Segundo
+- **Segundo:**
   - Habilidades analíticas
   - Capacidad de resolución de problemas
   - Trabajo en equipo

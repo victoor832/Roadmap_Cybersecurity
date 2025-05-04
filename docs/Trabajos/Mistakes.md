@@ -20,7 +20,7 @@ sidebar_label: Errores al Empezar
   - Monta un laboratorio casero sencillo y practica configurando cortafuegos o analizando registros del sistema.
   - Demuestra a los empleadores que puedes enfrentarte a situaciones reales, no sólo aprobar exámenes de opción múltiple.
 
-- Error nº 2: saltarse los fundamentos de la informática y las redes**.
+- **Error nº 2: saltarse los fundamentos de la informática y las redes**.
   - Una base sólida en TI y redes es esencial para el crecimiento continuo y la escalabilidad sin toparse rápidamente con un techo o una limitación. Sin esta base, el progreso se detiene, lo que le obliga a volver atrás, revisar y estudiar todo de nuevo antes de seguir adelante.
 
 - ***Evitar***
@@ -30,7 +30,7 @@ sidebar_label: Errores al Empezar
 
   - Instala Linux en un ordenador libre o en una máquina virtual y ponte cómodo con el terminal.
 
-- Error nº 3: Intentar hacerlo todo a la vez**.
+- **Error nº 3: Intentar hacerlo todo a la vez**.
   - Hay muchos campos dentro de la ciberseguridad (como Pentesting, SOC, Especialista en Seguridad en la Nube, etc.), pero no intentes abarcarlos todos. Es importante experimentar y descubrir lo que realmente te gusta, pero una vez que hayas tomado tu decisión, céntrate en un área. (Consejo: con sólo una semana o un poco más de estudio y práctica, podrás averiguarlo).
 
 - ***Evita***
@@ -45,5 +45,5 @@ sidebar_label: Errores al Empezar
 - **Date a conocer. Trabajar en red es clave**.
   - Trabaja activamente en red: asiste a eventos, habla con reclutadores y conéctate en LinkedIn. Las oportunidades vienen más de la gente que de las listas de empleo.
 
-- La suerte es la intersección del trabajo duro y la oportunidad.
+- **La suerte es la intersección del trabajo duro y la oportunidad**.
   - Trabaja duro desde el principio: nunca se sabe cuándo dará sus frutos. Las oportunidades llegan cuando tu experiencia y esfuerzo te hacen destacar. Aunque tu camino no esté claro ahora, cada paso que das te acerca más a tus objetivos.

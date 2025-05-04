@@ -22,6 +22,4 @@ sidebar_label: Wikis
 - Este mapa enumera las técnicas esenciales para eludir el antivirus y el EDR
 
 # [Cheatsheet_HTB](https://github.com/beafn28/Cheatsheet-Hacking)
-- Se contempla las técnicas más vistas con comandos para su aplicación en la gran mayoría de máquinas
-
-#
+- Se contempla las técnicas más vistas con comandos para su aplicación en la gran mayoría de máquina

@@ -13,16 +13,16 @@ sidebar_label: Intership
 - **TikTok**
   - [Cybersecurity Intern (Security & Privacy) 2025 Summer](https://www.levels.fyi/jobs?utm_campaign=google_jobs_apply&utm_medium=organic&utm_source=google_jobs_apply&jobId=120026196837573318)
 
-- Laboratorio Nuclear Naval
+- **Laboratorio Nuclear Naval**
   - [Cybersecurity Summer Internship 2025](https://www.untapped.io/app/discover/jobs/naval-nuclear-laboratory/cybersecurity-summer-internship-2025/029e52e6-582f-49dc-8ee5-8f05386cfbbd?utm_source=www.withsandra.dev&utm_medium=referral&utm_campaign=here-s-a-list-of-cybersecurity-internships-for-2025)
 
-- Tecnologías Tyler
+- **Tecnologías Tyler**
   - ENLACE_5
 
-- Nokia
+- **Nokia**
   - [Cyberthreat Security Research Intern](https://www.levels.fyi/jobs?utm_campaign=google_jobs_apply&utm_medium=organic&utm_source=google_jobs_apply&jobId=111522067907519174)
 
-- Ruptura
+- **Ripple**
   - [Cryptography Research Engineer Intern](https://ripple.com/careers/all-jobs/job/5989570/?utm_source=www.withsandra.dev&utm_medium=referral&utm_campaign=here-s-a-list-of-cybersecurity-internships-that-re-still-hiring)
 
 - **SANS (Sólo para mujeres)**

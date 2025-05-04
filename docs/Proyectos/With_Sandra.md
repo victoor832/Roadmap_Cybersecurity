@@ -15,7 +15,7 @@ sidebar_label: Con_Sandra
 - **Construir un simulador de ataque de phishing**
   - [Alphasec](https://alphasec.io/phishing-attack-simulation-with-gophish?utm_source=www.withsandra.dev&utm_medium=referral&utm_campaign=here-are-6-beginner-cybersecurity-projects-to-get-hired)
 
-- Trabaje con su propio sistema de tickets de TI**
+- **Trabaje con su propio sistema de tickets de TI**
   - [CourseCareers](https://coursecareers.com/a/WithSandra?course=it&utm_source=www.withsandra.dev&utm_medium=referral&utm_campaign=here-are-6-beginner-cybersecurity-projects-to-get-hired)
 
 - Construya su propio Sistema de Detección de Intrusos (IDS)** basado en Host
@@ -24,7 +24,7 @@ sidebar_label: Con_Sandra
 - Su Primer Hack/Pentest Ético
   - ENLACE_7
 
-- Simulaciones de trabajo en ciberseguridad
+- **Simulaciones de trabajo en ciberseguridad**
   - [Forage](https://www.theforage.com/simulations?careers=security&utm_source=www.withsandra.dev&utm_medium=referral&utm_campaign=here-are-6-beginner-cybersecurity-projects-to-get-hired)
 
 ## Segundo [Here are 8 beginner cybersecurity projects you can try this weekend](https://www.withsandra.dev/p/3-beginner-cybersecurity-projects-can-try-weekend-free)
@@ -49,5 +49,5 @@ sidebar_label: Con_Sandra
 - Proteja su red doméstica
   - Configuración de cortafuegos
   - Configuración de una red Wi-Fi segura
-  - *Protegerse frente a posibles amenazas o malware*
-  - *Etc*
+  - Protegerse frente a posibles amenazas o malware
+  - Etc

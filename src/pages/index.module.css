@@ -1,9 +1,6 @@
-/* src/pages/index.module.css */
-main section p {
-  color: #666666; /* Color ejemplo - cámbialo según tus preferencias */
-}
+/* Github Button Styles */
 
-/* .Btn {
+.github {
   border: none;
   border-radius: 50%;
   width: 45px;
@@ -18,15 +15,15 @@ main section p {
   overflow: hidden;
 }
 
-.svgIcon {
+.githubIcon {
   transition-duration: .3s;
 }
 
-.svgIcon path {
+.githubIcon path {
   fill: white;
 }
 
-.text {
+.githubtext {
   position: absolute;
   color: rgb(255, 255, 255);
   width: 120px;
@@ -35,65 +32,170 @@ main section p {
   transition-duration: .4s;
 }
 
-.Btn:hover {
+.github:hover {
   width: 110px;
   transition-duration: .4s;
   border-radius: 30px;
 }
 
-.Btn:hover .text {
+.github:hover .githubtext {
   opacity: 1;
   transition-duration: .4s;
 }
 
-.Btn:hover .svgIcon {
+.github:hover .githubIcon {
   opacity: 0;
   transition-duration: .3s;
-} */
-
-
-/* Para párrafos dentro de la sección hero */
-.heroBanner p {
-  color: #ffffff; /* Texto blanco para la sección hero */
 }
 
-/* Para párrafos dentro de las tarjetas de temas */
+/* Discord Button Styles */
+
+.discord {
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: .4s;
+  cursor: pointer;
+  position: relative;
+  background-color: #5865F2;
+  overflow: hidden;
+}
+
+.discordIcon {
+  width: 3em;
+  height: 3em;
+  transition-duration: .3s;
+  color: white; /* Esto hará que 'currentColor' funcione si el path lo usa */
+  display: block;
+  margin: auto; /* asegura centrado */
+  transform: translate(24%, 26%); /* elimina posibles desplazamientos */
+}
+
+.discordIcon path {
+  fill: white; /* Asegura que el ícono sea visible */
+}
+
+.discordtext {
+  position: absolute;
+  color: white;
+  width: 120px;
+  font-weight: 600;
+  opacity: 0;
+  transition-duration: .4s;
+}
+
+.discord:hover {
+  width: 110px;
+  transition-duration: .4s;
+  border-radius: 30px;
+}
+
+.discord:hover .discordtext {
+  opacity: 1;
+  transition-duration: .4s;
+}
+
+.discord:hover .discordIcon {
+  opacity: 0;
+  transition-duration: .3s;
+}
+
+
+
+/* src/pages/index.module.css */
+main section p {
+  color: #666666;
+}
+
+/* Estilos para párrafos en diferentes secciones */
+.heroBanner p {
+  color: #333333;
+}
+
+html[data-theme='dark'] .heroBanner p {
+  color: #ffffff;
+}
+
 .topicCard p {
-  color: #666666; /* Color gris medio para las descripciones en tarjetas */
-  
+  color: #666666;
 }
 
 .topicCard h3 {
-  color: #1b4269;
+  color: #333333;
 }
 
-/* Para párrafos en la sección de actualizaciones */
+html[data-theme='dark'] .topicCard h3 {
+  color: #e0e0e0;
+}
+
 .updateCard p {
-  color: #444444; /* Color personalizado para texto en actualizaciones */
+  color: #666666;
+}
+
+html[data-theme='dark'] .updateCard p {
+  color: #b0b0b0;
 }
 
 .updateCard h3 {
-  color: black;
+  color: #333333;
   font-weight: bold;
 }
 
-/* Button styles */
+html[data-theme='dark'] .updateCard h3 {
+  color: #e0e0e0;
+}
 
+/* Button styles */
 .buttonStyle {
-  border: 2px solid black;
+  border: 2px solid #d0d0d0;
   transition: background-color 0.3s ease;
 }
+
 .buttonStyle:hover {
-  background-color: #e0e0e0; /* Gris claro, cambia si quieres */
+  background-color: #e0e0e0;
 }
 
-/* General layout and responsive design */
+html[data-theme='dark'] .buttonStyle:hover {
+  background-color: #333333;
+}
+
+/* Estilos para botones secundarios */
+.button.button--secondary {
+  color: #ffffff;
+  background-color: #444444;
+}
+
+html[data-theme='dark'] .button.button--secondary {
+  color: #ffffff;
+  background-color: #555555;
+}
+
+.button.button--outline.button--secondary {
+  color: #333333;
+  border-color: #444444;
+}
+
+html[data-theme='dark'] .button.button--outline.button--secondary {
+  color: #ffffff;
+  border-color: #aaaaaa;
+}
+
+/* General layout y diseño responsive */
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #051937, #004d7a);
+  background: linear-gradient(135deg, #ececec, #d4d4d4);
+  color: #333333;
+}
+
+html[data-theme='dark'] .heroBanner {
+  background: linear-gradient(135deg, #000000, #222222);
   color: white;
 }
 
@@ -148,10 +250,14 @@ main section p {
   margin-top: 2rem;
 }
 
-/* Stats Section Styling */
+/* Mejora de Stats Section */
 .statsSection {
   padding: 3rem 0;
-  background-color: #f7f7f7;
+  background-color: #c0bfbf;
+}
+
+html[data-theme='dark'] .statsSection {
+  background-color: #111111;
 }
 
 .statsGrid {
@@ -161,12 +267,17 @@ main section p {
 }
 
 .statCard {
-  background-color: white;
+  background-color: #ffffff;
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+html[data-theme='dark'] .statCard {
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
 }
 
 .statCard:hover {
@@ -174,10 +285,20 @@ main section p {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+html[data-theme='dark'] .statCard:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
 .statCard h3 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
-  background: linear-gradient(90deg, #004d7a, #008793);
+  background: linear-gradient(90deg, #333333, #666666);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html[data-theme='dark'] .statCard h3 {
+  background: linear-gradient(90deg, #dddddd, #aaaaaa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -191,6 +312,11 @@ main section p {
   text-align: center;
   margin-bottom: 2.5rem;
   font-size: 2rem;
+  color: #333333;
+}
+
+html[data-theme='dark'] .sectionTitle {
+  color: #e0e0e0;
 }
 
 .topicsGrid {
@@ -200,7 +326,7 @@ main section p {
 }
 
 .topicCard {
-  background-color: white;
+  background-color: #e6e6e6;
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
@@ -212,9 +338,28 @@ main section p {
   height: 100%;
 }
 
+html[data-theme='dark'] .topicCard {
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Topic Card Hover Effect */
+.topicCard:hover,
+.topicCard:hover *,
+.topicIcon:hover,
+.topicIcon:hover::after,
+.topicIcon:hover::before {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
 .topicCard:hover {
-  transform: translateY(-5px);
+  transform: scale(1.02);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+html[data-theme='dark'] .topicCard:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .topicIcon {
@@ -222,10 +367,14 @@ main section p {
   margin-bottom: 1rem;
 }
 
-/* Updates Section Styling */
+/* Mejora de Updates Section */
 .updatesSection {
   padding: 4rem 0;
-  background-color: #f7f7f7;
+  background-color: #c0bfbf;
+}
+
+html[data-theme='dark'] .updatesSection {
+  background-color: #0a0a0a;
 }
 
 .updatesGrid {
@@ -236,16 +385,25 @@ main section p {
 }
 
 .updateCard {
-  background-color: white;
+  background-color: #ffffff;
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+html[data-theme='dark'] .updateCard {
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
 }
 
 .updateCard:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+html[data-theme='dark'] .updateCard:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
 .updateMeta {
@@ -255,8 +413,12 @@ main section p {
 }
 
 .updateDate {
-  color: #666;
+  color: #888888;
   font-size: 0.9rem;
+}
+
+html[data-theme='dark'] .updateDate {
+  color: #aaaaaa;
 }
 
 .viewAllContainer {
@@ -268,6 +430,31 @@ main section p {
 /* Community Section Styling */
 .communitySection {
   padding: 4rem 0;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+html[data-theme='dark'] .communitySection {
+  background-color: #000000;
+  color: white;
+}
+
+.communityText p {
+  color: #000000;
+}
+
+html[data-theme='dark'] .communityText p {
+  color: white;
+}
+
+.communitySection h2 {
+  color: black;
+  text-align: center;
+}
+
+html[data-theme='dark'] .communitySection h2 {
+  color: white;
+  text-align: center;
 }
 
 .communityContent {
