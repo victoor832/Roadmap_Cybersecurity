@@ -37,50 +37,50 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-
-
-/* Estilo para las tarjetas de previsualización del blog */
-.blog-list-page .article__card {
-  background-color: #f5f5f5; /* Color para modo claro */
+.mainWrapper_z2l0 {
+  background-color: #c5c5c5;
 }
 
-/* Para modo oscuro */
-html[data-theme='dark'] .blog-list-page .article__card {
-  background-color: #2d2d2d; /* Color para modo oscuro */
+html[data-theme='dark'] .mainWrapper_z2l0 {
+  background-color: #000000;
 }
 
 /* Estilo para la página completa de vista previa del blog */
 .blog-list-page {
-  background-color: #4b4b4b; /* Color de fondo para la página completa en modo claro */
-}
-
-html[data-theme='dark'] .blog-list-page {
-  background-color: #4b4b4b !important; /* Color de fondo para la página completa en modo oscuro */
+  background-color: #949494; /* Color de fondo para la página completa en modo claro */
 }
 
 /* Estilo para la preview de blogs */
 .margin-bottom--xl {
   padding: 2rem;
-  background-color: #b8b8b856;
+  background-color: #ffffffdb;
   border-radius: 16px;
+}
+
+html[data-theme='dark'] .margin-bottom--xl {
+  background-color: #1a1a1a !important; /* Color de fondo para la vista previa en modo oscuro */
 }
 
 /* Estilo para la navbar de blog */
 .sidebar_re4s {
   padding: 2rem;
-  background-color: #b8b8b856;
+  background-color: #ffffffdb;
   border-radius: 16px;
+}
+
+html[data-theme='dark'] .sidebar_re4s {
+  background-color: #1a1a1a !important; /* Color de fondo para la navbar en modo oscuro */
 }
 
 
 /* Estilos para footer */
 .footer {
-  background-color: #cac7c7;
+  background-color: #9e9d9d;
   color: #000000 !important;
   padding: 2rem 0;
 }
 
-[data-theme='dark'] .footer {
+html[data-theme='dark'] .footer {
   background-color: #1a1a1a;
   color: #ffffff;
   padding: 2rem 0;
