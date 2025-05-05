@@ -6,27 +6,119 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
+  --ifm-color-primary: #0077b6;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
   --ifm-color-primary-light: #33925d;
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary-button-updates: #484848;
+  --ifm-color-primary-button-updates-color: white;
+  --ifm-color-primary-button-hero: #919191;
+  --ifm-color-primary-button-hero-color: black;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(255, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary: #90e0ef;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
   --ifm-color-primary-darkest: #1a8870;
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary-button-updates: #757474;
+  --ifm-color-primary-button-updates-color: white;
+  --ifm-color-primary-button-hero: #3a3a3a;
+  --ifm-color-primary-button-hero-color: white;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Estilo para las tarjetas de previsualización del blog */
+.blog-list-page .article__card {
+  background-color: #f5f5f5; /* Color para modo claro */
+}
+
+/* Para modo oscuro */
+html[data-theme='dark'] .blog-list-page .article__card {
+  background-color: #2d2d2d; /* Color para modo oscuro */
+}
+
+/* Estilo para la página completa de vista previa del blog */
+.blog-list-page {
+  background-color: #4b4b4b; /* Color de fondo para la página completa en modo claro */
+}
+
+html[data-theme='dark'] .blog-list-page {
+  background-color: #4b4b4b !important; /* Color de fondo para la página completa en modo oscuro */
+}
+
+/* Estilo para la preview de blogs */
+.margin-bottom--xl {
+  padding: 2rem;
+  background-color: #b8b8b856;
+  border-radius: 16px;
+}
+
+/* Estilo para la navbar de blog */
+.sidebar_re4s {
+  padding: 2rem;
+  background-color: #b8b8b856;
+  border-radius: 16px;
+}
+
+
+/* Estilos para footer */
+.footer {
+  background-color: #cac7c7;
+  color: #000000 !important;
+  padding: 2rem 0;
+}
+
+[data-theme='dark'] .footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 2rem 0;
+}
+
+.footer__title {
+  font-weight: bold;
+  color: #000000;
+}
+
+[data-theme='dark'] .footer__title {
+  color: #ffffff;
+}
+
+.footer__link-item {
+  color: #070707;
+}
+
+[data-theme='dark'] .footer__link-item {
+  color: #e6e6e6;
+}
+
+.footer__link-item:hover {
+  color: #0077b6;
+  text-decoration: none;
+}
+
+[data-theme='dark'] .footer__link-item:hover {
+  color: #90e0ef;
+}
+
+.footer__copyright {
+  font-size: 0.85rem;
+  color: #000000;
+}
+
+[data-theme='dark'] .footer__copyright {
+  color: #b0b0b0;
 }
 
 /* Estilos para bloques de código en modo oscuro */

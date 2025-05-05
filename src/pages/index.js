@@ -11,6 +11,54 @@ import styles from './index.module.css';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
+  // Estado para manejar el hover
+  const [hovered, setHovered] = useState(false);
+
+  // Definimos los estilos directamente en línea
+  const buttonStyleStart = {
+    background: 'var(--ifm-color-primary-button-hero)',
+    color: 'var(--ifm-color-primary-button-hero-color)',
+    fontFamily: 'inherit',
+    padding: '0.35em',
+    paddingLeft: '1.2em',
+    fontSize: '17px',
+    fontWeight: 600,
+    borderRadius: '0.9em',
+    border: 'none',
+    letterSpacing: '0.05em',
+    display: 'flex',
+    alignItems: 'center',
+    boxShadow: 'inset 0 0 1.6em -0.6em var(--ifm-color-primary-button-hero)',
+    overflow: 'hidden',
+    position: 'relative',
+    height: '2.8em',
+    paddingRight: '3.3em',
+    cursor: 'pointer',
+    textDecoration: 'none'
+  };
+
+  const iconStyleStart = {
+    background: 'white',
+    marginLeft: '1em',
+    position: 'absolute',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: '2.2em',
+    width: hovered ? 'calc(100% - 0.6em)' : '2.2em',
+    borderRadius: '0.7em',
+    boxShadow: '0.1em 0.1em 0.6em 0.2em var(--ifm-color-primary-button-hero)',
+    right: '0.3em',
+    transition: 'all 0.3s'
+  };
+
+  const svgStyleStart = {
+    width: '1.1em',
+    transition: 'transform 0.3s',
+    color: 'gray',
+    transform: hovered ? 'translateX(0.1em)' : 'none'
+  };
+
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
@@ -20,15 +68,27 @@ function HomepageHeader() {
             <p className="hero__subtitle">Recursos y guías avanzadas para profesionales de la ciberseguridad</p>
             <div className={styles.buttons}>
               <Link
-                className="button button--secondary button--lg"
-                to="/docs/Cursos/cursos">
-                Comenzar ahora →
-              </Link>
-              <Link
-                className="button button--outline button--lg button--secondary"
-                id='buttondarker'
-                to="/blog">
-                Consulta el blog
+                to="/blog"
+                style={buttonStyleStart}
+                onMouseOver={() => setHovered(true)}
+                onMouseOut={() => setHovered(false)}
+              >
+                Comenzar ahora
+                <div style={iconStyleStart}>
+                  <svg
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    style={svgStyleStart}
+                  >
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                      fill="black"
+                    ></path>
+                  </svg>
+                </div>
               </Link>
             </div>
           </div>
@@ -147,8 +207,8 @@ function LatestUpdates() {
 
   // Definimos los estilos directamente en línea
   const buttonStyle = {
-    background: '#FFB100',
-    color: 'black',
+    background: 'var(--ifm-color-primary-button-updates)',
+    color: 'var(--ifm-color-primary-button-updates-color)',
     fontFamily: 'inherit',
     padding: '0.35em',
     paddingLeft: '1.2em',
@@ -159,7 +219,7 @@ function LatestUpdates() {
     letterSpacing: '0.05em',
     display: 'flex',
     alignItems: 'center',
-    boxShadow: 'inset 0 0 1.6em -0.6em #FFB100',
+    boxShadow: 'inset 0 0 1.6em -0.6em var(--ifm-color-primary-button-updates)',
     overflow: 'hidden',
     position: 'relative',
     height: '2.8em',
@@ -178,7 +238,7 @@ function LatestUpdates() {
     height: '2.2em',
     width: hovered ? 'calc(100% - 0.6em)' : '2.2em',
     borderRadius: '0.7em',
-    boxShadow: '0.1em 0.1em 0.6em 0.2em #FFB100',
+    boxShadow: '0.1em 0.1em 0.6em 0.2em var(--ifm-color-primary-button-updates)',
     right: '0.3em',
     transition: 'all 0.3s'
   };
@@ -225,7 +285,7 @@ function LatestUpdates() {
                 <path d="M0 0h24v24H0z" fill="none"></path>
                 <path
                   d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                  fill="currentColor"
+                  fill="black"
                 ></path>
               </svg>
             </div>

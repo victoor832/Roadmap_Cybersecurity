@@ -16,7 +16,7 @@
 }
 
 .githubIcon {
-  transition-duration: .3s;
+  transition-duration: .2s;
 }
 
 .githubIcon path {
@@ -29,23 +29,23 @@
   width: 120px;
   font-weight: 600;
   opacity: 0;
-  transition-duration: .4s;
+  transition-duration: .3s;
 }
 
 .github:hover {
   width: 110px;
-  transition-duration: .4s;
+  transition-duration: .3s;
   border-radius: 30px;
 }
 
 .github:hover .githubtext {
   opacity: 1;
-  transition-duration: .4s;
+  transition-duration: .3s;
 }
 
 .github:hover .githubIcon {
   opacity: 0;
-  transition-duration: .3s;
+  transition-duration: .2s;
 }
 
 /* Discord Button Styles */
@@ -58,7 +58,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-duration: .4s;
+  transition-duration: .3s;
   cursor: pointer;
   position: relative;
   background-color: #5865F2;
@@ -68,7 +68,7 @@
 .discordIcon {
   width: 3em;
   height: 3em;
-  transition-duration: .3s;
+  transition-duration: .2s;
   color: white; /* Esto hará que 'currentColor' funcione si el path lo usa */
   display: block;
   margin: auto; /* asegura centrado */
@@ -85,23 +85,23 @@
   width: 120px;
   font-weight: 600;
   opacity: 0;
-  transition-duration: .4s;
+  transition-duration: .3s;
 }
 
 .discord:hover {
   width: 110px;
-  transition-duration: .4s;
+  transition-duration: .3s;
   border-radius: 30px;
 }
 
 .discord:hover .discordtext {
   opacity: 1;
-  transition-duration: .4s;
+  transition-duration: .3s;
 }
 
 .discord:hover .discordIcon {
   opacity: 0;
-  transition-duration: .3s;
+  transition-duration: .2s;
 }
 
 
@@ -109,6 +109,10 @@
 /* src/pages/index.module.css */
 main section p {
   color: #666666;
+}
+
+html[data-theme='dark'] main section p {
+  color: #d5d5d5;
 }
 
 /* Estilos para párrafos en diferentes secciones */
@@ -122,6 +126,10 @@ html[data-theme='dark'] .heroBanner p {
 
 .topicCard p {
   color: #666666;
+}
+
+html[data-theme='dark'] .topicCard p {
+  color: #acacac;
 }
 
 .topicCard h3 {
@@ -339,7 +347,7 @@ html[data-theme='dark'] .sectionTitle {
 }
 
 html[data-theme='dark'] .topicCard {
-  background-color: #1e1e1e;
+  background-color: #3f3f3f;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
 }
 
