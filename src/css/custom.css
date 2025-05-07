@@ -6,7 +6,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #0077b6;
+  --ifm-color-primary: #00336F;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
@@ -42,7 +42,7 @@
 }
 
 html[data-theme='dark'] .mainWrapper_z2l0 {
-  background-color: #000000;
+  background-color: #111;
 }
 
 /* Estilo para la página completa de vista previa del blog */

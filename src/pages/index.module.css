@@ -261,7 +261,7 @@ html[data-theme='dark'] .heroBanner {
 /* Mejora de Stats Section */
 .statsSection {
   padding: 3rem 0;
-  background-color: #c0bfbf;
+  background-color: #acacac;
 }
 
 html[data-theme='dark'] .statsSection {
@@ -378,7 +378,7 @@ html[data-theme='dark'] .topicCard:hover {
 /* Mejora de Updates Section */
 .updatesSection {
   padding: 4rem 0;
-  background-color: #c0bfbf;
+  background-color: #acacac;
 }
 
 html[data-theme='dark'] .updatesSection {
@@ -440,6 +440,7 @@ html[data-theme='dark'] .updateDate {
   padding: 4rem 0;
   background-color: #ffffff;
   color: #000000;
+
 }
 
 html[data-theme='dark'] .communitySection {
@@ -457,12 +458,10 @@ html[data-theme='dark'] .communityText p {
 
 .communitySection h2 {
   color: black;
-  text-align: center;
 }
 
 html[data-theme='dark'] .communitySection h2 {
   color: white;
-  text-align: center;
 }
 
 .communityContent {
